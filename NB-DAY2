@@ -1,0 +1,43 @@
+CONTAINER:
+COST-EFFECTIVE STORAGE FOR UNSTRUCTURED DATA
+
+HOW MANY TYPES OF CONTAINERS:
+3 TYPES OF CONTAINERS
+PAGE BLOB: VIRTUAL HARD DISK INFO 
+BLOCK BLOB: IS USED FOR BINARY INFORMATION (IMAGE OR TEXT FILE)
+APPEND BLOB: LOG INFORMATION ( TO TRACK USER INFO WHEN BINDED WITH OTHER RESOURCES)
+
+TO CREATE CONTAINER:
+
+NEW CONTAINER
+NAME: __________
+
+PUBLIC ACCESS LEVELS:
+
+PRIVATE (NO ANONYMOUS ACCESS)
+
+BLOB (ANONYMOUS READ ACCESS FOR BLOBS)
+Blobs within the container can be read by anonymous request, but container data is not available.
+Anonymous clients cannot enumerate the blobs within the container.
+
+CONTAINER (ANONYMOUS READ ACCESS FOR CONTAINERS AND BLOBS)
+All container and blob data can be read by anonymous request. Clients can enumerate blobs within the container by anonymous request,
+but cannot enumerate containers within the storage account.
+
+MICROSOFT AZURE STORAGE EXPLORER IS USED TO MIGRATE DATA FROM SYSTEM OR SERVER TO CLOUD.
+
+DOWNLOAD MICROSOFT AZURE STORAGE EXPLORER
+
+6 WAYS TO CONNECT TO AZURE STORAGE EXPLORER
+1. ADD AZURE ACCOUNT (IT WILL LOGIN INTO ACCOUNT. ALL STORAGE ACCOUNTS ARE VISIBLE)
+2. ADD A RESOURCE VIA AZURE ACTIVE DIRECTORY (ONLY PARTICUAL RESOURCE GROUP IS VISIBLE)
+3. USE A CONNECTION STRING ( COPY CONNECTION STRING FROM ACCESS KEYS (STORAGE ACCOUNT BLADES))
+4. USE A SHARED ACCESS SIGNATURE (SAS) ( A shared access signature (SAS) is a URI that grants restricted access rights to Azure Storage 
+resources. You can provide a shared access signature to clients who should not be trusted with your storage account key but whom you
+wish to delegate access to certain storage account resources. By distributing a shared access signature URI to these clients,
+you grant them access to a resource for a specified period of time.)
+5. USE A STORAGE ACCOUNT NAME AND KEY (COPY KEY FROM ACCESS KEYS)
+6. ATTACH TO A LOCAL EMULATOR
+
+
+
