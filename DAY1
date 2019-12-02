@@ -61,9 +61,29 @@ SERVICES          SERVICES            SERVICE
 4.TABLE
 
 REPLICATION: RA-GRS
+
 LOCAL REDUNDANCY STORAGE (LRS): SINGLE REGION
+
 GRS (GEO REDUNDANCY STORAGE): 2 REGIONS PRIMARY AND SECONDARY
+
 RAGRS (READ ACCESS GEO REDUNDANCY STORAGE (PRIMARY AND SECONDARY READ ONLY)
+
+ZRS ZONE REDUNDANT STORAGE: REPLICATES DATA IN MULTIPLE LOCATIONS
+
+Locally Redundant Storage (LRS)
+LRS ensures that your data stays within a single data center in your chosen region. Data is replicated three times.
+LRS is cheaper than the other types of redundancy and doesn’t provide protection against data center failures.
+
+Zone-Redundant Storage (ZRS)
+Only available for block blobs, ZRS keeps three copies of your data across two or three data centers, either within your chosen
+region or across two regions.
+
+Geo-Redundant Storage (GRS)
+This is the type of redundancy that Microsoft recommends by default, and it keeps six copies of your data. 
+Three copies stay in the primary region, and the remaining three are replicated to a secondary region.
+
+Read-Access Geo-Redundant Storage (RA-GRS)
+The default redundancy setting, RA-GRS replicates data to a secondary region, where apps also get read access to the data.
 
 
 CONNECTIVITY METHOD:
@@ -74,7 +94,7 @@ PRIVATE END POINT
 ADVANCED:
 SECURE TRANSFER .ENABLE
 LARGE FILE SHARE .ENABLE
-BLOBSOFT DELETE .ENABLE (IF BLOB IS DELETED IT WILL CREATE A BACKUP)
+BLOBSOFT DELETE .ENABLE (IF BLOB IS ENABLED IT WILL CREATE A BACKUP)
 DATA LAKE STORAGE GEN2 .ENABLE (IT WILL PROVIDE ADDITIONAL STORAGE) 
 
 * DATA BASE (CURRENT STORAGE)
