@@ -12,5 +12,58 @@ TAG: IDENTITY OF RESOURCE
 DIAGNOSE AND SOLVE PROBLEMS: IT WILL PROVIDE DOCUMENTS AND SOLUTIONS FOR SOME COMMON TROUBLESHOOTS AND PROBLEMS
 DATA TRANSFER: TO TRANSFER DATA FROM LOCAL TO CLOUD DATA TRANSFER IS USED. AND ALSO USER CAN SETUP DATA SIZE, 
 NETWORK BANDWIDTH AND TRANSFER FREQUENCY.
-
+EVENTS: TO CREATE AN EVENT TO SEND NOTIFICATIONS TO THE USER
+ACCESS KEYS: When we create a storage account, Azure generates and assigns two 512-bit storage access keys to the account.
+These keys are required for authentication when accessing the storage account. Two access keys are generated,
+one is the primary access key and another is the secondary access key
+GEO-REPLICATION: THE AZURE STORAGE REPLICATION COPIES DATA IN THE SECONDARY REGION. SO THAT IN CASE OF HARDWARE FAILURE OR 
+NATURAL DISASTER THE DATA CAN BE RECOVERED FROM SECONDARY ENDPOINT 
+CORS: CORS is an HTTP feature that enables a web application running under one domain to access resources in another domain. 
+Web browsers implement a security restriction known as same-origin policy that prevents a web page from calling 
+APIs in a different domain. CORS provides a secure way to allow one domain (the origin domain) to call APIs in another domain.
+CONFIGURATION: TO UPDATE CONFIGURATIONS LIKE ACCESS TIERS, REPLICATION CAN BE MODIFIED. BUT ACCOUNT TYPE AND ACCOUNT KIND 
+CANNOT BE CHANGED. 
+ENCRYPTION: Storage service encryption protects your data at rest. Azure Storage encrypts your data as it's written in our datacenters, 
+and automatically decrypts it for you as you access it.
+By default, data in the storage account is encrypted using Microsoft Managed Keys. 
+You may choose to bring your own key for encryption for Blobs and Files. You may choose to bring your own key for encryption for
+Azure Blobs and Files. Encryption for Tables and Queues will always use Microsoft Managed Keys.
+OR OWN KEY CAN BE CREATED WHICH IS KEY VAULT
+WHAT IS KEY VAULT: 
+Secrets Management– in a secure manner, one can store and control access to tokens, passwords, certificates, API keys, and other secrets.
+Key Management– As a key management solution, Azure Key Vault simplifies the process of creating and managing encryption keys.
+Certificate Management– It serves as a service to provision, manages, and deploy public and private Secure Sockets Layer/Transport Layer
+Security (SSL/TLS) certificates. These can be used with Azure and other internal connected resources.
+Hardware Security Modules – Secrets and keys can be protected by software, or FIPS 140-2 Level 2 validated HSMs.
+SHARED ACCESS SIGNATURE: 
+A shared access signature (SAS) is a URI that grants restricted access rights to Azure Storage resources. You can provide a 
+shared access signature to clients who should not be trusted with your storage account key but whom you wish to delegate access to 
+certain storage account resources. By distributing a shared access signature URI to these clients, you grant them access to a
+resource for a specified period of time.
+USER CAN RESTRICT 
+ALLOWED SERVICES FOR: BLOB, FILE, QUEUE, TABLE
+ALLOWED RESOURCE TYPES: SERVICE, CONTAINER, OBJECT
+ALLOWED PERMISSION: READ, WRITE, DELETE, LIST, ADD, CREATE, UPDATE, PROCESS
+START DATE AND END DATE
+ALLOWED IP ADDRESS
+ALLOWED PROTOCOLS: HTTPS ONLY OR HTTP AND HTTPS
+FIREWALLS AND VIRTUAL NETWORKS: IT WILL ALLOW ACCESS TO ALL NETWORKS OR SELECTED NETWORKS
+ADVANCED SECURITY:
+STATIC WEBSITE: Enabling static websites on the blob service allows you to host static content. 
+Webpages may include static content and client-side scripts. Server-side scripting is not supported.
+CUSTOM DOMAIN:
+SOFT DELETE: TO RECOVER DATA UPTO 365 DAYS. IF DATA DELETED FROM STORAGE ACCOUNT DATA CANNOT BE RECOVERED. 
+When turned on, soft delete enables you to save and recover your blob data in many cases where blobs or blob snapshots are deleted.
+AZURE CDN (CONTENT DELIVERY NETWORK) : IS A TEMPORARY CACHE. 
+The Azure Content Delivery Network (CDN) is designed to send audio, video, images, and other files faster and more reliably to
+customers using servers that are closest to the users. This dramatically increases speed and availability, resulting in significant
+user experience improvements.
+ADD AZURE SEARCH: FOR ADDITIONAL INFORMATION WILL BE AVAILABLE. UPDATED INFORMATION.
+LIFECYCLE MANAGEMENT: Lifecycle management offers a rich, rule-based policy for general purpose v2 and blob storage accounts. 
+Use the policy to transition your data to the appropriate access tiers or expire at the end of the data's lifecycle.
+FILE SHARES: TO SHARE FILES FROM OFF SHORE TO CLOUD
+TABLES:TO STORE UNSTRUCTURED JASON QUERIES DATA
+QUERY: TO STORE LARGE AMOUNT OF DATA
+ALERTS (CLASSIC): TO NOTIFY THE CHANGES IN STORAGE ACCOUNT. CREATE MANAGE ACTION ROLE
+METRICS (CLASSIC): IS BASED ON AVERAGE.
 
