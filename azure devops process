@@ -1,0 +1,22 @@
+step 1. create visual studio project and build
+step 2. 
+create azure organization
+step 3.
+create new project [+new project]
+project name:
+description:
+ visibility: public/ private
+ Advanced: 
+ version control
+ 
+ work item process
+ basic, scrum, agile, CMMI
+ 
+ STEP 4.
+ create branches
+ default branch master
+ create new "dev" branch 
+ 
+ step 5.  (Requirement GIT TORTISE DOWNLOAD)
+ Goto VS project 
+ "GIT CLONE"
