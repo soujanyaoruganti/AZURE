@@ -1,1 +1,6 @@
 
+check version: 
+$PSVersionTable
+
+Install modules:
+Install-Module -Name Az -AllowClobber -Scope CurrentUser
