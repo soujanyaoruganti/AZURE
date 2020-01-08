@@ -10,12 +10,30 @@ WINSCP:
 TO DOWNLOAD WINSCP :
 FILEHIPPO.COM (https://filehippo.com/download_winscp/post_download/)
 
-FLOW OF APPSERVICE WHILE APPSERVICE CREATION:
-APPINSIGHT
-APPSERVICE PLAN
-WEBSITE
 
 STEPS TO CREATE WINSCP:
 CREATE APPSERVICE
-CONNECT TO APPSERVICE
-GOTO
+Open App service
+From blades open deployment Center
+Open FTP dashboard
+Open Winscp
+Copy credentials from FTP to Winscp
+Now connection is established throught FTP port
+
+Download sample HTML project in local 
+Copy sample project and drag to local
+
+Open URL in App Service to view the Website.
+
+
+VISUAL STUDIO DEPLOYMENT:
+
+Create a Porject is VS
+Build the Project
+Right click on Name of the WebApplication
+Click PUblish
+Create new App Service
+Click on Publish
+
+
+
