@@ -37,14 +37,39 @@ TAGS:
 
 REVIEW AND CREATE
 
-ONCE APP SERVICE IS DEPLOYED
-GOTO RESOURCES
+FLOW OF APPSERVICE WHILE APPSERVICE CREATION:
+APPINSIGHT
+APPSERVICE PLAN
+WEBSITE
+KEY POINTS:
+WHAT IS APP SERVICE PLAN?
+In App Service, an app runs in an App Service plan. An App Service plan defines a set of compute resources for a web app to run. 
+These compute resources are analogous to the server farm in conventional web hosting. One or more apps can be configured to run 
+on the same computing resources (or in the same App Service plan).
 
-GOTO DEPLOYMENT CENTER ----->FTP----->DASHBOARD
+When you create an App Service plan in a certain region (for example, West Europe), a set of compute resources is created for that
+plan in that region. Whatever apps you put into this App Service plan run on these compute resources as defined by your App Service
+plan. Each App Service plan defines:
 
-OPEN WINSCP APP
+Region (West US, East US, etc.)
+Number of VM instances
+Size of VM instances (Small, Medium, Large)
+Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, Isolated)
+The pricing tier of an App Service plan determines what App Service features you get and how much you pay for the plan.
+There are a few categories of pricing tiers:
 
-IN FTP DASHBOARD
-App Credentials
-copy FTP's ENDPOINT, USERNAME, PASSWORK
-AND PASTE IN WINSCP APP
+Shared compute: Free and Shared, the two base tiers, runs an app on the same Azure VM as other App Service apps, including apps of 
+other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources cannot scale out.
+Dedicated compute: The Basic, Standard, Premium, and PremiumV2 tiers run apps on dedicated Azure VMs. Only apps in the same App Service
+plan share the same compute resources. The higher the tier, the more VM instances are available to you for scale-out.
+Isolated: This tier runs dedicated Azure VMs on dedicated Azure Virtual Networks. It provides network isolation on top of compute 
+isolation to your apps. It provides the maximum scale-out capabilities.
+
+SKU AND SIZE?
+DEV/ TEST: F1, B1 (For less demanding workloads)
+PRODUCTION: P1V2, P2V2, P3V2 (For most production loads)
+ISOLATED: (Advanced networking and scaling)
+
+APPLICATION INSIGHTS? 
+For monitoring purpose.
+
