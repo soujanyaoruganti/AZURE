@@ -1,1 +1,89 @@
 https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal
+
+AZURE NETWORK ARCHITECTURE:
+file:///C:/Users/Ravi/Downloads/1.Azure-Network-Security-Overview.pdf
+
+What is Virtual Network?
+It is an own representation of Private Cloud.
+
+Adress space and Subnet are required for Virtual Network.
+
+Public IP Adress prefix:
+It will decide the number of virtual networks
+Formual to calcuate the virtual connerction for prefix: 2 power 32-n 
+
+Static IP: The IP donot change after restarting
+Dynamic IP: The IP changes after restarting. 
+
+Subnet : will help to establish connection between virtual networks. 
+A subnet is a range of IP addresses in the VNet. You can divide a VNet into multiple subnets for organization and security.
+
+
+NIC: (NETWORK INTERFACE) A network interface (NIC) is the interconnection between a VM and a virtual network (VNet). A VM must have
+at least one NIC, but can have more than one, depending on the size of the VM you create. 
+
+**************************************************************
+Create a VIrtual Network 
+create address space and subnet in Virtual Network
+
+Create Network Security Group
+
+Open New VM
+assign Security details to the VM in Networking tab
+
+***************************************************************
+
+
+****************************************************************
+
+Connect Virtual Networks using Virtual Network Peering:
+
+You can connect virtual networks to each other with virtual network peering.
+These virtual networks can be in the same region or different regions (also known as Global VNet peering). 
+Once virtual networks are peered, resources in both virtual networks are able to communicate with each other,
+with the same latency and bandwidth as if the resources were in the same virtual network. In this tutorial, you learn how to:
+
+1. Create two virtual networks
+2. Connect two virtual networks with a virtual network peering
+3. Deploy a virtual machine (VM) into each virtual network
+4. Communicate between VMs
+
+********************************************************************************************************************
+Virtual Networks Peering:
+
+Step 1:
+Create 2 Virtual Networks
+VN1                              VN2
+Name MyVn1                       Name: MyVn2
+In Networking tab:
+Address space: 10.0.0.0/16       Address Space: 10.0.0.0/16
+Subnet: 10.0.0.0/24              Subnet: 10.0.0.0/24
+
+Step 2:
+Peer Virtual Networks:
+Open MyVn1--------->Peering-------------------->Add
+Virtual Network: MyVn2
+
+Step 3: 
+Create 2 Virtual Machines
+MyVm1                                 MyVm2
+In Networking tab:
+Virtual Network: MyVn1                Virtual Network: MyVn2
+Subnet: Subnet1                        Subnet: Subnet2
+* Allow selected ports
+*RDP
+
+Step 4:
+Communication between Virtual Machines
+MyVm1-------------------> connect----------------->MSTSC
+
+
+
+
+
+
+
+
+
+
+
