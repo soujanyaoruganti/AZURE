@@ -91,5 +91,13 @@ We can paste our required project in the WWWROOT folder
 Restart the Machine 
 Then click on BROWSER 
 
+PAAS: Platform As A Service
+For visual studio webapplication we have used app service which is PAAS deployment 
+PAAS provides a framework for the developers to create customised applications. All the components like storage, servers and networks
+are managed by third party while the developers can only maintain the applications. 
+
+IAAS: Infrastructure As A Service
+For VM deployment we have used IIS service which is IAAS deployment
+IAAS clients have full control over the infrastructure 
 
 
