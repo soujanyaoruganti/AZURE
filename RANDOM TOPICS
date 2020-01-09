@@ -1,0 +1,21 @@
+Decommission of VM?
+When a virtual machine is no longer needed in your production environment, you can issue this command to initiate a staged removal 
+of the virtual machine file space from the server. The DECOMMISSION VM command marks all data that was backed up for the virtual 
+machine as inactive, so it can be deleted according to your data retention policies. After all data that was backed up for the 
+virtual machine expires, the file space that represents the virtual machine is deleted. The DECOMMISSION VM command affects only 
+the virtual machine that you identify. The data center node, and the other virtual machines that are hosted by the data center
+node are not affected.
+
+Deleting the VM
+
+Deallocation of VM?
+It has been the state of the machine is in Stopped (Deallocated) means that you have made a shutdown by Web Management 
+Interface Azure ( SHUTDOWN BUTTON ). In this way the cost of virtual machine will not be charged, but the public and internal IP 
+will be deleted. Note that the IP addresses were excluded (internal and public), if you do not book a 
+public IP (maximum of 5 per signature), you may notice that you have a web site or application on this machine, 
+the web site / application will be unavailable and when turning it back as a new public IP will be provisioned. 
+You have to do a DNS entry manually if you are accessing by a proper name.
+
+The VM is shutdown temporarily. Charges are not applicable during shutdown. But Public IP and Private IP are deleted. After restarting the 
+virtual machine a new IP is provisioned. 
+
