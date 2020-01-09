@@ -1,0 +1,95 @@
+TYPES OF DEPLOYMENT:
+1. WINSCP
+2. VM DEPLOYMENT
+3. VSTS 2017/2019
+4. AZURE DEVOPS
+5. POWERSHELL
+
+WINSCP:
+
+TO DOWNLOAD WINSCP :
+FILEHIPPO.COM (https://filehippo.com/download_winscp/post_download/)
+
+
+STEPS TO CREATE WINSCP:
+CREATE APPSERVICE
+Open App service
+From blades open deployment Center
+Open FTP dashboard
+Open Winscp
+Copy credentials from FTP to Winscp
+Now connection is established throught FTP port
+
+Download sample HTML project in local 
+Copy sample project and drag to local
+
+Open URL in App Service to view the Website.
+To view the website copy URL from App Service and paste in the browser.
+
+
+VISUAL STUDIO DEPLOYMENT:
+
+Create a Porject is VS
+Build the Project
+Right click on Name of the WebApplication
+Click PUblish
+Create new App Service
+Click on Publish
+ONCE Publish is successful
+You can see the URL in the same window. Copy and paste the URL in the browser to see the website.
+
+VISUAL STUDIO SQL DATABASE DEPLOYMENT:
+
+Right click on solution
+ADD new Project
+Selct SQL database project
+and create the project 
+
+ADD New Items like tables
+
+Now build the Project
+
+GOTO Azure Portal
+Add SQL database server service
+Create sql database server
+Create Administrator account details
+ADD SQL Database 
+
+GOTO visual studio and publish the database project
+Now establish the connection between portal and Visual studio using the credential in sql server database like server name and 
+login details
+Now click publish
+
+ERRORS Expected:
+ERROR: Unable to connect to the target server
+SOL: Change the firewall setting in portal sql server database
+Allow IP Address range between
+0.0.0.0  to  255.255.255.255
+
+ERROR: A project which specifies sql server 2016 as the target platform cannot be published to microsoft azure sql database V12
+SOL:
+
+
+
+
+VIRTUAL MACHINE DEPLOYMENT:
+
+Create  a Virtual Machine 
+Type MSTSC to open Remote Desktop Connection 
+Use the credential from Virtual Machine like Public IP and User name and password to LOGIN
+ONce the connection is established 
+Open Server Manager to enable IIS
+Click on Add roles and features and follow the steps
+Enable IIS and INstal ASP.NET framework
+
+ONce setup is ready open IIS Manager
+On the left side of the panel you can see DEFAULT WEBSITE
+Right click on DEFAULT WEBSITE and click Explorer
+It will open WWWROOT folder
+It has the default IIS website
+We can paste our required project in the WWWROOT folder
+Restart the Machine 
+Then click on BROWSER 
+
+
+
