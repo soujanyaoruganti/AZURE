@@ -19,3 +19,15 @@ You have to do a DNS entry manually if you are accessing by a proper name.
 The VM is shutdown temporarily. Charges are not applicable during shutdown. But Public IP and Private IP are deleted. After restarting the 
 virtual machine a new IP is provisioned. 
 
+Artifacts?
+The files aquired after deployment.
+
+Challenges Faced?
+Some of the references files were missed.
+
+Debug?
+To test code in local
+
+Release?
+To test code in remote
+
