@@ -1,0 +1,21 @@
+We have two slots in Deployment slots
+Staging 
+Production
+
+Staging slot is pre production where application can be deployed and tested whether its working or not
+Once the staging slot is successful the code is swapped between staging and production slots. 
+Incase of errors in production the code is swapped again. 
+
+GOTO App Service-------> deployment slots
++ADD Slot
+
+Name:
+.
+.
+.
+ADD
+
+Open URL from App Service Overview
+Open URL from deployment slot
+
+Once swap is DONE URL's will change
