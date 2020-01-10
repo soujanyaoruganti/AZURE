@@ -1,0 +1,22 @@
+Project is a combination of domains
+Domains:
+Insurance
+Banking
+Retail
+Survey
+Pharmacy
+Finance
+
+Mobile App         ------->Connect to           
+Scan the receipt           storage account
+****                        shop
+                            processed
+                            unprocessed
+                                  :
+                                  :
+                           Developers will call
+                           the queues and will send
+                           the notification to the user
+                                  :
+                                  :
+                            invalid receipt      
