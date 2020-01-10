@@ -33,3 +33,16 @@ To test code in remote
 
 What is environment?
 Environment is a collection of resources.
+We have environments:
+DEV-- Developers environment   Owner--Developer
+SIT--System Intergration Test  Owner-- Tester
+UAT-- User Acceptance Test     Owner --Business Analyst
+Stage-- Pre production     Owner-- Client
+Production          owner-- Client
+
+
+
+
+
+
+
