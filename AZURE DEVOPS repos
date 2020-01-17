@@ -1,0 +1,29 @@
+REPOS:
+Files: Consists of files
+Commit: To save changes
+Push: 
+Branches: Consists of branches
+Tags
+Pull Request: Can raise pull request from this TAB.
+
+
+Azure repos have 5 types of branches:
+DEV: Dev branch consists of latest code. 
+FUTURE: New changes and modifications are done in future branch
+MASTER: Master branch is the default branch
+RELEASE: If any applications are ready to move to production, (USE : WHAT EVER THE CODE NEED TO BE DEPLOYED FOR PRODUCTION A SEPERATE 
+BRANCH IS CREATED )
+HOTFIX: AFTER COMPLETING DEPLOYMENT TO PRODUCTION BRANCH, DEVELOPERS MAY FIND SOME BUGS. (USE: IF ANY BUGS ARE FOUND IN PRODUCTION,
+A NEW BRANCH FROM MASTER BRANCH IS CREATED WHICH IS HOTFIX BRANCH)
+
+BRANCH POLICIES:
+
+Goto branches------------> click on the right ... side of the branch---------------> branch policies
+1. Requires minimum number of reviewers
+2. Check for linked work items
+3. Check for comment resolution
+4. Limit merge types
+
+PULL REQUEST: To commit changes from future branch to Dev branch PR is raised. 
+
+
