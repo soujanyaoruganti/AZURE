@@ -1,0 +1,64 @@
+BUILD:
+Create NEW PIPELINE
+Use the Classic Editor
+
+1. Select a source:
+Azure devops supports 6 version controls:
+Azure Repos git
+Git Hub
+Git Hub enterprise
+Subversion
+Bigbucket Cloud
+Other git
+2. Select a Template:
+ASP.NET
+
+3. TASKS
+1. PIPELINE: (Build Pipeline)
+Name:
+Agent pool: Azure Pipeline (Default ) It is microsoft hosted agent default pipeline
+Agent specification: Agent pool consists of following agents (select one)
+Parameters: Select the package (project) **\ *.sln
+Artifact Name: Artifacts are saved in DROP folder
+
+2. GET SOURCES:
+
+Select a source
+
+3. AGENT JOB
+
+4. Use NuGet installer
+5. NuGet Restorer
+6. Build Solution:
+
+Name:
+Solution: Path of the solution
+Visual studio version: Latest 
+MSBuild Argument: To zip DLL files into one package following command has to be passed
+7. Test Assemblies: Change name "test" accordingly
+8. Publish Artifact:
+Name:
+Path to Publish: $(build.artifactstagingdirectory) Predefine variable
+The local path on the agent where any artifacts are copied to before being pushed to their destination.
+For example: c:\agent_work\1\a
+Artifact Name: drop (default folder to save artifacts)
+Artifact publish location: Azure pipelines
+
+
+CREATE A SELF HOSTED AGENT
+
+Goto AzureDevops-------->Organization(project) Settings------------->Pipelines--------->Agent pools------>Add pool---->Name:--->
+click on name----------->New Agent--------->Download---------->Extract files--------> open config as run as administrator
+Enter Server URL: https://dev.azure.com/sureshmsbi408------>profile-------->PAT------>+New Token----------->create---->copy
+Enter agent pool name: 
+Agent name: create
+y
+enter
+From the folder
+Run-------> run as administrator (to show online)
+
+
+
+
+
+
