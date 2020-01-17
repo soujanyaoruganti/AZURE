@@ -1,0 +1,8 @@
+"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "",: Location of the Jason and describes the version of the template language
+  "apiProfile": "",
+  "parameters": {  },: To execute the values while deployment and can be customised
+  "variables": {  },:
+  "functions": [  ],: User defined functions that are available in templates
+  "resources": [  ],: Resource types that are deployed or updated in a resource group or subscription.
+  "outputs": {  }: Values that are returned after deployment
