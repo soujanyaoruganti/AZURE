@@ -1,0 +1,18 @@
+PREREQUISTS:
+Download GIT.EXE
+https://git-scm.com/downloads
+
+Download Tortisegit
+https://tortoisegit.org/download/
+
+Download VSTS
+
+GOTO azure devops portal 
+step1: Create a new project 
+step2: GOTO REPOS --> Files and intilize the project 
+step3: Create Work Item (In boards)
+step4: GOTO Repos---> branches
+Create new branch (Future branch)
+Name: Dev
+based On: master
+step5: Clone the project to local 
