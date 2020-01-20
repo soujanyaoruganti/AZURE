@@ -12,7 +12,38 @@ step1: Create a new project
 step2: GOTO REPOS --> Files and intilize the project 
 step3: Create Work Item (In boards)
 step4: GOTO Repos---> branches
-Create new branch (Future branch)
+Create new branch (Dev branch)
 Name: Dev
 based On: master
 step5: Clone the project to local 
+Step6: Create a VSTS project
+and build the project
+Copy vs project files in the local project near the readme.txt file.
+Step7: Right click and goto Tortisegit ---->create a new branch
+Future branch
+Select : switch to new branch
+click OK
+Step8: Right click in the project and Commit and push Future branch
+Now the project is in remote repos files. 
+Step8: Set branching policies to Dev branch
+Branching policies:
+Minimum number of reviewers
+verify comment resolution
+verify linked work items
+Limit merge types
+Build Validation (Gated build)
++Add build policy
+
+step9: create new pipeline
+step10: triggers : enable CI trigger
+save new pipe line
+
+Step11: Create a pull request
+Goto Future branch
+click New pull request
+change branch: future into Dev
+Add reviewers
+Add Work items
+SAVE
+Once PR is raised the files from future branch will merge to Dev branch.
+
