@@ -2,3 +2,9 @@ Requirements:
 SPN: Service Principal Name
 To establish connection between AZURE devops and azure portal.
 
+Tabs:
+Pipeline: Click on Add to Build the pipeline to add artifacts
+Continuous deployment trigger: For continuous deployment when ever there is a build
+Add stages (SIT, UAT, PRODUCTION)
+Stages consists of Pre-deployment conditions and Post deployment conditions
+Pre-deployment conditions:
