@@ -8,3 +8,15 @@ Continuous deployment trigger: For continuous deployment when ever there is a bu
 Add stages (SIT, UAT, PRODUCTION)
 Stages consists of Pre-deployment conditions and Post deployment conditions
 Pre-deployment conditions:
+After-release
+After-stage
+Manual
+2. Artifacts filter:
+To select one or more artifacts
+3. Pull request deployment
+4. Pre-deployment approval
+5. Gates
+
+Post Deployment Conditions:
+Auto redeploy trigger: To deploy last successful deployment incase the present deployment is failed. 
+
