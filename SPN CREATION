@@ -1,0 +1,145 @@
+Creating SPN (Service Principal Name)
+
+
+
+We tracked it down to two missing permissions required by the underlying New-AzureRmRoleAssignment cmdlet that is called by the task –
+ 
+The Service Principal (SPN) used by Azure DevOps to connect to your Azure subscription requires the Owner role
+The same SPN also requires Read directory data permissions to your Azure AD
+The steps to grant the additional permissions are described below.
+
+Step-1
+Under Azure Subscription,
+Click Manage Option
+
+ 
+
+
+Step-2
+Then it is Redirecting to below screen.
+ 
+
+
+
+Step-3
+Click on Create service connection
+And selecting Azure Resource Manager
+And click NEXT
+
+ 
+
+Step-4
+We click on use the full version of the service connection dialog.
+
+ 
+
+ After selecting  use the full version of the service connection  you can see img
+
+ 
+
+You have to provide some basic details on that screen
+
+Connection Name:- (eg:- xyz)
+Environment:- Azure Cloud
+Scope level:- Subscription
+Subscription ID: - eg:-15d401-02eb-46e5-b0c2-cd5a1b6a13a8
+(for this subscription, you have to go yor Azure portal and see your subscription Id)
+Subscription Name: -(eg:- tcs)
+Service Principal client ID: -
+(for this you have to follow bellow steps)
+
+Step-5
+Login to  Portal.Azure.com
+Select blades
+And click azure aztive directory
+
+ 
+
+
+
+                  Step-6
+            Grant Azure AD permissions
+By default, the SPN created by Azure DevOps is only granted sign in and read user profile permissions against Azure AD. We now need to grant the SPN the additional read directory data permission.
+	Go to Azure AD -> App Registrations
+
+ 
+
+	Next click on New registration
+
+ 
+
+Step-7
+After click on New registration you have provide some details
+
+Name: (eg:-xyz)
+Redirect URI: -(eg:-https://xyz )
+
+Then click on Register, below is the screen shot
+
+ 
+
+
+	After creating app registration
+	To get client ID, tenant ID  you have to  register in app registration in azure ad
+	After register done you can get  client id  img
+	click on Certificates & secrets
+ 
+
+
+	To get Service principal key: 
+	Go to azure ad blades and  select on New client secret to create service principal key it 
+	 And select client secret
+	Next add new client secret and create
+	It is a onetime visibility   key  one the page is refresh it won’t be visible  so save the key for feature usage
+ 
+
+	After giving Description and click on Add
+
+ 
+
+	Then copy that key paste it that principal key
+
+Service principal key: (eg:-********************************)
+ 
+
+	Get tenant id form  register app in azure ad copy from it and past
+	Tenant ID:- eg:-( c3796ad2-0b57-4484-b2c8-7077306acc14’) 
+
+ 
+
+	To get Verify connection done 
+	You need provide permission to this app  in subscriptions level
+	For this go portial.azure.com
+	And click on subscriptions and  select your id that you want to give permission   subscription 
+	Next go to subscription blades  and select IAM
+
+ 
+
+Select subscription id
+
+ 
+
+
+
+	Click on Access Control (IAM)
+ 
+
+
+	And select on Add and click on Add role assignment
+
+ 
+
+	Here you have to provide some details 
+
+Provide  a Role: Owner or contributor  level
+Select: your app that you created in azure ad 
+Next click on save
+
+ 
+Step-8
+Then go to Azure devops click on Verify Connection
+
+ 
+
+	once verification is done  next click on ok  and Your  azure subscription app is ready
+
