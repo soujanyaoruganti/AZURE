@@ -21,5 +21,19 @@ for this profile, all healthy endpoints are returned.
 Subnet: Select Subnet traffic-routing method to map sets of end-user IP address ranges to a specific endpoint within a Traffic Manager
 profile. When a request is received, the endpoint returned will be the one mapped for that request’s source IP address. 
 
+
+TM based on the routing method. The traffic is redirected to different regions. /Redirecting the traffic to different regions based on 
+routing methods.
+Advantages: High availability, zero downtime
 Step 1: Create 2 web apps in 2 different regions.
+GOto app service editor-------> root directory of website----> hostingstart.html----> edit---> backspack
+
+GOTO all services----->Traffic manager----->+Add
+Create 2 Endpoints to Traffic manager in overview
+Add 2 app services to different end points
+
+Browse the traffic manager URL in browser.
+
+Change the configurations and browse again.
+
 
